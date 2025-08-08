@@ -40,7 +40,9 @@ watch(todoId, fetchData);
     <!-- 
     
       <Suspense>
-        <template></template>
+        <template>
+          
+        </template>
       </Suspense>
      -->
     <LoadingSpinner v-if="isLoading" />
