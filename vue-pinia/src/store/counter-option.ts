@@ -13,6 +13,7 @@ export const useCounterStore = defineStore('counter', {
     doubleCount: (state) => state.count * 2,
   },
   // 내가 정의하 고 싶은 함수
+  // this를 통해서 값을 반환할때는 반환값 명시를 해주는 것이 좋다
   actions: {
     increment() {
       this.count++;

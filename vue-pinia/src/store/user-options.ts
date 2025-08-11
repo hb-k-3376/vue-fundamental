@@ -22,7 +22,7 @@ interface State {
 // });
 
 export const useUserStore = defineStore('user', {
-  state: () => ({ userData: null }),
+  state: () => ({ userData: null as User[] | null }),
   // actions 함수 내에서는 비동기 함수도 잘 동작한다.
   actions: {
     async fetchUser() {
